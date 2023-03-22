@@ -1,0 +1,486 @@
+
+.navbar {
+    background: rgb(2, 17, 29) !important; 
+    padding: 10px; 
+    padding-right: 2rem; 
+    padding-left: 2rem; 
+    font-family: 'Titillium Web', sans-serif;            
+}
+
+.nav-link:hover {
+    color: rgb(7, 205, 255) !important;
+}
+
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 450px;
+    text-align: center;
+    background-image: url(imagenes/2.jpg);
+    background-repeat: no-repeat; /*que la imagen no se repita*/
+    background-size: cover; /*que cubra todo el ancho de la pagina*/
+}
+
+#img-principal {
+    display: block;
+    padding: 5px;
+    width: 70%;
+    margin: auto;
+    border-radius: 50%;
+    /*background-color: #1e2326;*/
+    background: transparent;
+    box-shadow: 0 0 30px #0f1010,    
+    0 0 35px #0e8cd0;
+}
+
+#img-principal:hover {
+    transform: translateX(-2px);
+    transition: 0.5s;
+    background-color: #082d41;
+}
+
+.banner{
+    max-width: 350px;
+}
+
+.redes a{
+    color: azure;
+    background-color: #1e2326;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #0671a3;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 30px 5px -25px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+
+.redes a:hover {
+    background-color: #107ab7;
+}
+
+.degrade{
+    background-image: linear-gradient(to left top, #1E2326,
+    #08395e, #117780, #0a53b3, #0cafeb);
+    /*background-image: linear-gradient(to left top, #051937, #004d7a, #008793, #00bf72, #a8eb12);*/
+}
+
+.sobre-mi {
+    /*background: #1E2326;*/
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    height: 550px;
+    padding: 10px;
+    align-items: center;
+}
+
+.sobre-mi .contenedor {
+    padding: 15px;
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;  
+    border-top: 2px solid #8080804d;
+    border-bottom: 2px solid #8080804d;
+}
+
+.titulo-sobreMi {
+    font-size: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-family: 'Rubik Dirt', cursive;
+    text-align: center;
+    color: #b9dfed;
+}
+
+.texto-sobreMi {
+    max-width: 700px;
+    text-align: center;
+    font-size: 1.1rem;
+    font-style: italic;
+    padding: 1rem;
+}
+
+.sobre-mi button {
+    cursor: pointer;
+    background-color: rgb(5, 41, 64);
+    border: 2px solid rgb(7, 205, 255);
+    border-radius: 8px;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: aliceblue;
+    position: relative;
+    z-index: 10;
+}
+
+.sobre-mi button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1797c9;
+    z-index: -1;
+    transition: 1s;
+}
+
+.sobre-mi button:hover .overlay{
+    width: 100%;
+}
+
+.bi-arrow-down-square{
+    padding: 8px;
+}
+
+.titulo-curriculum{
+    padding-top: 2.5rem;
+    margin-bottom: 2.2rem;
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Rubik Dirt', cursive;
+    color: #b9dfed;
+}
+
+.experiencia{
+    padding: 40px 40px 60px 40px;
+}
+
+.experiencia .columna{
+    padding: 20px;
+    border: 2px solid #8080804d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0.2s ease-in;
+}
+
+.experiencia .columna:hover{
+    background: #1b1b32;
+}
+
+.bi-laptop{
+    font-size: 2.2rem;
+    color: #7ade30;
+    background-color: #0a0a23;
+    padding: 8px 15px;
+    border-radius: 50%;
+}
+
+.exp-titulo{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0px;
+    color: aliceblue;
+}
+
+.text {
+    color: aliceblue;
+}
+
+.fa-brands{
+    font-size: 2rem;
+    padding: 5px;
+    color: #b9dfed;
+}
+
+.fa-solid{
+    font-size: 2.2rem;
+    padding: 5px;
+    color: #afd1de; 
+}
+
+.badges-contenedor{
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.badge{
+    margin: 5px;
+}
+
+.mis-proyectos {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-proyecto{
+    font-family: 'Rubik Dirt', cursive;
+    color: #b9dfed;
+    padding-bottom: 15px;
+}
+
+.titulo-descripcion{
+    font-size: 1.2rem;
+}
+
+.mis-proyectos img{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    transition: all 0.2s ease;
+}
+
+.proyecto-contenedor{
+    padding-top: 60px;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.info-adicional{
+    transition: all 0.2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.info-adicional p{
+    font-size: 22px;
+    font-weight: bold;
+    color: #b9dfed;
+    margin-bottom: 0;
+}
+
+.proyecto{
+    position: relative;
+}
+
+.proyecto img{
+    box-shadow: 10px 10px 30px #0f1010,    
+    5px 5px 5px #0f1010;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.proyecto:hover img{
+    opacity: 0.2;
+}
+
+.proyecto:hover .info-adicional{
+    opacity: 1;
+}
+
+.info-adicional .iconos-proyectos{
+    display: flex;
+}
+
+.info-adicional i{
+    font-size: 60px;
+    color: aliceblue;
+    margin: 10px;
+}
+
+.btn-info{
+    font-size: 1rem;
+    margin: 20px;
+    padding: 10px;
+    color: aliceblue;
+    background-color: rgb(5, 41, 64);
+    font-family: 'Titillium Web', sans-serif;  
+}
+
+.bi-arrow-right-circle{
+    padding: 5px;
+}
+
+.certficados{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titulo-certificados{
+    font-family: 'Rubik Dirt', cursive;
+    color: #b9dfed;
+    padding: 15px;
+    margin-bottom: 1.5rem;
+}
+
+.descripcion-certificados{
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.carousel{
+    width: 60%;
+    height: 425px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contacto{
+    background-image: url(imagenes/Mapa-Mundi.png);
+    color: #b9dfed;
+    padding: 5px 0;
+    margin-top: 5rem;
+    margin-bottom: 3.5rem;
+}
+.contacto .contenido-contacto{
+    max-width: 35rem;
+    margin: auto;
+}
+.contacto h2{
+    /*font-family: 'Righteous';*/
+    font-family: 'Rubik Dirt', cursive;
+    text-align: center;
+    padding: 20px 0;
+}
+.contacto .fila{
+    display: flex;
+}
+.contacto .col{
+    width: 50%;
+    padding: 10px;
+    position: relative;
+    margin: 0 auto;
+}
+.contacto .col input, .contacto .col textarea{
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(2, 17, 29);
+    color: aliceblue;
+    font-size: 18px;
+}
+.contacto button{
+    cursor: pointer;
+    background-color: rgb(5, 41, 64);
+    border: 2px solid rgb(7, 205, 255);
+    border-radius: 10px;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: aliceblue;
+    position: relative;
+    z-index: 10;
+}
+
+.fa-paper-plane{
+    font-size: 15px;
+}
+
+.contacto button .adicional-boton{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1797c9;
+    z-index: -1;
+    transition: 1s;
+}
+.contacto button:hover .adicional-boton{
+    width: 100%;
+}
+
+.arriba{
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+}
+
+.footer{
+    background: rgb(2, 17, 29); 
+    padding: 2rem; 
+    font-family: 'Titillium Web', sans-serif; 
+}
+
+.footer .redes{
+    text-align: center;
+}
+
+.autor{
+    font-size: 16px;
+    color: aliceblue;
+    padding: 2.5rem 0 0.3rem 0;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 767px) {
+
+    .navbar-brand {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .img-principal {
+        max-width: 600px;
+    }
+
+    .carousel{
+        width: 60%;
+        height: 180px;
+        margin-bottom: 35px;
+
+    }
+}
+
+@media screen and (max-width: 300px) {
+
+    .titulo-sobreMi {
+        margin-top: 15rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .info-adicional p {
+        font-size: 18px;
+    }
+
+    .info-adicional i {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 450px){
+
+    .descripcion-certificados{
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 767px) {
+
+    .proyecto img{
+        min-height: 285px;
+    }
+}
