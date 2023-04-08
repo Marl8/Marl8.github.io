@@ -370,6 +370,7 @@
     background-color: rgb(2, 17, 29);
     color: aliceblue;
     font-size: 18px;
+    outline-color: rgb(7, 205, 255);
 }
 .contacto button{
     cursor: pointer;
