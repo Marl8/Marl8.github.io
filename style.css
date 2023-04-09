@@ -43,7 +43,7 @@
 
 #img-principal:hover {
     transform: scale(1.2);
-    transition: 0.5s;
+    transition: 0.8s linear;
     background-color: #082d41;
 }
 
