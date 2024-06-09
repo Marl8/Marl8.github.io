@@ -313,6 +313,12 @@
     justify-content: center;
 }
 
+.rubik-dirt-regular {
+    font-family: "Rubik Dirt", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
 .titulo-certificados{
     font-family: 'Rubik Dirt', cursive;
     color: #b9dfed;
